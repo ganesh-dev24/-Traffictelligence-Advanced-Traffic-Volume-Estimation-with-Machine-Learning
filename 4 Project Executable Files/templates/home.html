@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="https://static4.depositphotos.com/1011726/284/i/450/depositphotos_2842784-stock-photo-green-traffic-light.jpg">
+    <header>
+
+        <nav>
+            <ul>
+                <a href="{{url_for('home')}}" class="active"><li>HOME</li></a>
+                <a href="{{url_for('predict')}}"><li>PREDICT</li></a>
+                <a href="{{url_for('about')}}"><li>ABOUT</li></a>
+            </ul>
+        </nav>
+        <section class="home-container">
+            <div style="color:black;">
+                <h1 style="font-size: 110px;">WELCOME</h1>
+                <h2 style="font-size: 110px;">TO</h2>
+                <h3 style="font-size:90px;">TRAFFICTELLIGENCE</h3>
+                <h4 style="margin-left:480px;font-size:32px;">-NAVIGATING THE FUTURE</h4>
+                <a href="{{url_for('predict')}}"><button style="margin-left:340px; width: 300px; margin-bottom: 500px;"> TAP  TO  START </button></a>
+            </div>
+        </section>
+    </header>
+</body>
+</html>

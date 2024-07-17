@@ -1,0 +1,129 @@
+@font-face {
+    font-family: myfont;
+    src: url("./Oswald-VariableFont_wght.ttf");
+}
+*{
+    margin:0;
+}
+body{
+    overflow:hidden;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+}
+.active{
+    color:rgb(173, 173, 173);
+}
+header{
+    height:620px;
+}
+nav{
+    height:68px;
+    font-family:myfont;
+    font-size: 22px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+    gap:40px;
+}
+nav  a{
+    color:white;
+    text-decoration: none;
+}
+.home-container{
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    font-family:myfont;
+}
+.home-container  div{
+    display:flex;
+    flex-direction:column;
+    justify-content:baseline;
+    align-items:start;
+}
+.home-container  h1 {
+    font-size:80px;
+}
+.home-container h2 {
+    font-size:90px;
+}
+.home-container  h3 {
+    font-size:100px;
+}
+.home-container  button{
+    padding:10px;
+    background-color: black;
+    color:white;
+    border:none;
+    transition:0.6s ease;
+    border:2px solid;
+    margin-top:20px;
+    margin-left:10px;
+    }
+.home-container button:hover{
+    background-color:white;
+    color: black;
+
+}
+.about-section{
+    width: fit-content;
+    height:610px;
+    font-size:40px;
+    background-color:rgba(0, 0, 0, 0.76);
+    color:white;
+    backdrop-filter:blur(10px);
+    padding:10px;
+    font-family:myfont;
+    
+}
+input{
+    padding:8px;
+    width:200px;
+    background-color:black;
+    color:white;
+    backdrop-filter:blur(10px);
+    border:2px solid white;
+ }
+ select{
+    background-color:rgb(0, 0, 0);
+    padding:8px;
+    color:white;
+    width:220px;
+    /* background-color:transparent; */
+    backdrop-filter:blur(10px);
+    border:2px solid white;
+ }
+ input::placeholder{
+    font-size:15px;
+    color:white;
+ }
+ label{
+    font-size:25px;
+ }
+ .div1,.div2,.div3,.div4,.div5{
+    display:flex;
+    gap:20px;
+    flex-direction:row;
+ }
+ #weather{
+    width:220px;
+ }
+ .hou,.min,.sec{
+    width:115px;
+ }
+ .btn{
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:200px;
+    padding:15px;
+ }
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/style2.css">
+    <title>Traffic Volume Estimation</title>
+</head>
+
+
+<body background="https://cdn.prod.website-files.com/628905bae461d31c437ea344/63d40a305c85f36ca69a8478_Congestion.webp" text="white">
+     
+     <nav>
+          <ul>
+              <a href="{{url_for('home')}}" ><li>HOME</li></a>
+              <a href="{{url_for('predict')}}" class="active"><li>PREDICT</li></a>
+              <a href="{{url_for('about')}}"><li>ABOUT</li></a>
+          </ul>
+      </nav>
+ <div class = "Login">
+    <centre><h1 class="title" style="margin-left: 510px; font-size: 60px; color: black;">Traffic Volume Estimation</h1></centre>
+    
+    <h1 class="title2" style="margin-left: 450px; font-size: 60px; color: black;">Please Enter the following Details</h1>
+    <div class="container">
+    <form action="{{ url_for('result')}}"method="post">
+ 
+ 
+</style></head>
+
+    <div class="div1" style="color: white;"><div><label> holiday:</label>
+         <select id="holiday" name="holiday">
+                <option value=7>None</option>
+                <option value=1>Columbus Day</option>
+                <option value=10>Veterans Day</option>
+                <option value=9>Thanksgiving Day</option>
+                <option value=0>Christmas Day</option>
+                <option value=6>New Years Day</option>
+                <option value=11>Washingtons Birthday</option>
+                <option value=5>Memorial Day</option>
+                <option value=2>Independence Day</option>
+                <option value=8>State Fair</option>
+                <option value=3>Labor Day</option>
+                <option value=4>Martin Luther King Jr Day</option> 
+                
+                
+        </select> &nbsp;&nbsp;
+    </div>
+        
+        
+   <div> <label>temp:</label>
+        <input type="number" min="-20" max="50" name="temp" placeholder="Enter the temperature" required="required" /><br>
+   </div>
+</div>  
+        <div class="div2" style="color: white;"><div><label>rain:</label>
+         <input type="number" min="0"  max="1" name="rain"  placeholder="Enter 0 or 1" required="required" /><br>
+              </div>
+         <div><label>snow:</label>
+         <input type="number" min="0"  max="1" name="snow" placeholder="Enter 0 or 1" required="required" /><br>
+              </div>
+        </div>
+
+
+          <div class="div3" style="color: white;"><div><label>weather:</label>
+                 <select id="weather" name="weather">
+                        <option value=1>Clouds</option>
+                        <option value=0>Clear</option>
+                        <option value=6>Rain</option>
+                        <option value=2>Drizzle</option>
+                        <option value=5>Mist</option>
+                        <option value=4>Maze</option>
+                        <option value=3>Fog</option>
+                        <option value=10>Thunderstorm</option>
+                        <option value=8>Snow</option>
+                        <option value=9>Squall</option>
+                        <option value=7>Smoke</option>
+                       
+
+                 </select> &nbsp;&nbsp;
+                 </div>
+
+          <div><label>year:</label>
+          <input type="number" min="2012"  max="2022"  name="year" placeholder="Enter after 2012" required="required" /><br>
+          </div>
+          </div>
+
+           <div class="div4" style="color: white;"><div><label>month:</label>
+           <input type="number" min="1"  max="12"  name="month" placeholder="Enter 1-12" required="required" /><br>
+                </div>
+
+            <div><label>day:</label>
+            <input type="number" min="1"  max="31"  name="day" placeholder="Enter 1-31" required="required" /><br>
+            </div>
+           </div>
+             <div class="div5" style="color: white; "><div><label>hours:</label>
+             <input type="number" min="0" class="hou"  max="24"  name="hours" placeholder="0-24" required="required" /><br>
+                   </div>
+              <div><label>minutes:</label>
+              <input type="number" class="min" min="0"  max="60"  name="minutes" placeholder="0-60" required="required" /><br>
+              </div>
+              <div class="div6" style="color: white;"><label>seconds:</label>
+                  <input type="number"class=sec min="0"  max="60"  name="seconds" placeholder="0-60" required="required" /><br>
+                       </div>
+             </div>
+              <button  class="btn btn-primary btn-block btn-large" type="submit" style="margin-left: 200px;">PREDICT</button>
+
+      </form>
+      </div>
+<br>
+<br>
+   <br>
+   
+   </div>
+   <!-- {{prediction_text}} -->
+
+</body>
+</html>
